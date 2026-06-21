@@ -68,15 +68,12 @@ word = ''
 word = input('Введите слово или предложение, которое хотите расшифровать ')
 F1 = census(word)
 F2 = []
-print(F1)
 for i in range (0, len(F1) - 1):
   F2.append(transleit(F1[i]))
-print(F2)
 F3 = []
 for g in range(0, len(F2)):
   F3.append(uncode(F2[g]))
 result = ''
 for j in range(0, len(F3)):
   result = result + F3[j]
-print(F3)
 print(result)
